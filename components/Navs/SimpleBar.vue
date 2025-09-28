@@ -32,7 +32,7 @@ const toggleColorMode = () => {
       <section class="flex justify-end items-center gap-4 sm:gap-8">
         <section class="flex justify-end items-center gap-12">
           <ButtonsToggleColorMode @click="toggleColorMode()" />
-          <ButtonsIcon
+          <ButtonsAnchorIcon
             class="hidden lg:flex w-icon-2 justify-center items-center"
             v-for="anchor in anchors"
             :key="anchor.name"
