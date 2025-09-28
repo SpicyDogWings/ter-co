@@ -11,7 +11,7 @@
           TerCo
         </h1>
         <p class="text-gray-800 dark:text-gray-200 text-xl md:text-xl mt-4">
-          Una web para crear temas sencillos de la terminal "alacritty"
+          Una web para crear temas simples de terminales
         </p>
       </section>
       <section class="grow basis-1/4">
@@ -35,7 +35,7 @@
         <ButtonsAnchorIcon
           class="w-icon-1 mt-4"
           icon="lucide:github"
-          href="https://github.com/HarmonySpace"
+          href="https://github.com/SpicyDogWings"
         />
       </section>
     </section>

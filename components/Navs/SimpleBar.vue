@@ -3,7 +3,7 @@ const emits = defineEmits(["itsActive", "colorModeItem"]);
 const anchors = [
   {
     name: "Github",
-    url: "https://github.com/HarmonySpace/TerCo/tree/main",
+    url: "https://github.com/SpicyDogWings/ter-co",
     icon: "lucide:github",
   },
   {
