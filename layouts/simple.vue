@@ -4,7 +4,7 @@ const menuActive = ref(false);
 
 <template>
   <body
-    class="flex flex-wrap justify-center items-center w-full bg-gray-100 dark:bg-gray-950"
+    class="flex flex-wrap justify-center items-center w-full bg-mercury-100 dark:bg-mercury-950"
   >
     <section class="w-full flex flex-wrap justify-center items-center">
       <div class="fixed w-full bottom-12">
