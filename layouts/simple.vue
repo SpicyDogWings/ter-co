@@ -4,7 +4,7 @@ const menuActive = ref(false);
 
 <template>
   <body
-    class="flex flex-wrap justify-center items-center w-full bg-mercury-100 dark:bg-mercury-950"
+    class="flex flex-wrap justify-center items-start w-full min-h-screen bg-mercury-100 dark:bg-mercury-950"
   >
     <section class="w-full flex flex-wrap justify-center items-center">
       <div class="fixed w-full bottom-12">
@@ -32,7 +32,7 @@ const menuActive = ref(false);
           <main
             class="flex flex-wrap justify-center items-center w-full transition-all duration-150 ease-out"
           >
-            <slot name="page" />
+            <slot />
           </main>
         </Transition>
       </section>

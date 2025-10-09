@@ -1,8 +1,8 @@
 <template>
-  <footer class="flex flrex-wrap">
+  <footer class="flex flrex-wrap bg-mercury-100">
     <section
       id="footer1"
-      class="p-20 mt-32 flex flex-wrap justify-between gap-20"
+      class="p-20 mt-10 flex flex-wrap justify-between gap-20"
     >
       <section class="flex flex-col grow basis-1/4">
         <h1
