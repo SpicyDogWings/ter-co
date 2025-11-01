@@ -6,6 +6,7 @@
 
 ## Uso
 
+
 ### Paletta
 
 Puedes crear una paleta de colores en las siguientes páginas.
