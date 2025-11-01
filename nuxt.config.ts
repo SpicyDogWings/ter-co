@@ -10,8 +10,9 @@ export default defineNuxtConfig({
   ],
   colorMode: {
     classSuffix: "",
-    preference: "light",
+    preference: "system",
     fallback: "light",
   },
   compatibilityDate: "2024-09-05",
+  ssr: false
 });

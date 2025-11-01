@@ -4,7 +4,7 @@ const menuActive = ref(false);
 
 <template>
   <body
-    class="flex flex-wrap justify-center items-center w-full bg-mercury-100 dark:bg-mercury-950"
+    class="flex flex-wrap justify-center items-start w-full min-h-screen bg-mercury-100 dark:bg-mercury-950"
   >
     <section class="w-full flex flex-wrap justify-center items-center">
       <div class="fixed w-full bottom-12">
@@ -12,7 +12,7 @@ const menuActive = ref(false);
           <slot name="toast" />
         </Transition>
       </div>
-      <section class="w-10/12 pt-32 flex flex-wrap justify-center items-center">
+      <section class="w-10/12 pt-10 flex flex-wrap justify-center items-center">
         <header class="w-full">
           <NavsSimpleBar
             @itsActive="
@@ -32,7 +32,7 @@ const menuActive = ref(false);
           <main
             class="flex flex-wrap justify-center items-center w-full transition-all duration-150 ease-out"
           >
-            <slot name="page" />
+            <slot />
           </main>
         </Transition>
       </section>
@@ -60,18 +60,6 @@ const menuActive = ref(false);
   box-sizing: border-box;
   font-family: "Chivo", monospace;
   text-wrap: wrap;
-}
-</style>
-
-<style lang="postcss">
-.w-icon-1 {
-  @apply w-8 h-8;
-}
-.w-icon-2 {
-  @apply w-6 h-6;
-}
-.w-icon-3 {
-  @apply w-10 h-10;
 }
 </style>
 
