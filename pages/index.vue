@@ -12,8 +12,12 @@ const colorPalettes = ref([
     <section class="pt-20 w-full flex flex-col justify-start items-start">
       <h1 class="text-2xl text-mercury-800">Explora nuestras paletas</h1>
       <div class="w-full grid grid-cols-4 gap-10">
-        <PreviewColorBox v-model="colorPalettes" />
+        <template v-for="(palette, idx) in colorPalettes" :key="idx">
+          <PreviewColorBox :palette="palette" />
+        </template>
       </div>
     </section>
   </NuxtLayout>
 </template>
+
+    <!--<div v-for="(palette, idx) in colors" :key="idx"-->
