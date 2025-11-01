@@ -22,18 +22,18 @@ const toggleColorMode = () => {
   <nav class="w-full flex flex-wrap justify-between items-center">
     <div class="flex justify-between items-center w-full">
       <div class="h-8 flex justify-center items-center gap-8">
-        <IconsLogo class="w-icon-1 md:h-12 md:w-12 fill-blue-500" />
+        <IconsLogo class="md:h-8 md:w-8 fill-blue-500" />
         <h1
-          class="text-3xl sm:text-7xl md:text-6xl font-normal text-gray-900 dark:text-gray-200"
+          class="text-3xl sm:text-7xl md:text-4xl font-bold text-gray-900 dark:text-gray-200"
         >
           TerCo
         </h1>
       </div>
-      <section class="flex justify-end items-center gap-4 sm:gap-8">
-        <section class="flex justify-end items-center gap-12">
+      <section class="flex justify-end items-center">
+        <section class="flex justify-end items-center gap-4">
           <ButtonsToggleColorMode @click="toggleColorMode()" />
           <ButtonsAnchorIcon
-            class="hidden lg:flex w-icon-2 justify-center items-center"
+            class="hidden lg:flex justify-center items-center"
             v-for="anchor in anchors"
             :key="anchor.name"
             :href="anchor.url"

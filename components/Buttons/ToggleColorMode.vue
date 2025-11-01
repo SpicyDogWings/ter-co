@@ -15,13 +15,13 @@ const toggleColorMode = () => {
   <ButtonsAnchorIcon
     @click="toggleColorMode"
     v-show="colorMode.value === 'light'"
-    class="grow w-icon-1 text-gray-600 transition-all duration-150 hover:text-gray-900 hover:cursor-pointer hover:scale-75"
+    class="grow text-gray-600 transition-all duration-150 hover:cursor-pointer"
     icon="lucide:sun"
   />
   <ButtonsAnchorIcon
     @click="toggleColorMode"
     v-show="colorMode.value === 'dark'"
-    class="grow w-icon-2 text-gray-600 transition-all duration-150 hover:text-gray-900 hover:cursor-pointer hover:scale-75"
+    class="grow text-gray-600 transition-all duration-150 hover:cursor-pointer"
     icon="lucide:moon"
   />
 </template>

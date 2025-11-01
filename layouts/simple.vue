@@ -12,7 +12,7 @@ const menuActive = ref(false);
           <slot name="toast" />
         </Transition>
       </div>
-      <section class="w-10/12 pt-32 flex flex-wrap justify-center items-center">
+      <section class="w-10/12 pt-10 flex flex-wrap justify-center items-center">
         <header class="w-full">
           <NavsSimpleBar
             @itsActive="
@@ -60,18 +60,6 @@ const menuActive = ref(false);
   box-sizing: border-box;
   font-family: "Chivo", monospace;
   text-wrap: wrap;
-}
-</style>
-
-<style lang="postcss">
-.w-icon-1 {
-  @apply w-8 h-8;
-}
-.w-icon-2 {
-  @apply w-6 h-6;
-}
-.w-icon-3 {
-  @apply w-10 h-10;
 }
 </style>
 
