@@ -6,7 +6,7 @@ const colorPalettes = ref([
 
 <template>
   <NuxtLayout name="simple">
-    <section class="pt-20 w-full flex flex-col justify-start items-start">
+    <section class="pt-20 w-full flex flex-col justify-start items-start gap-5">
       <h1 class="text-2xl text-mercury-800">Explora nuestras paletas</h1>
       <div class="w-full grid grid-cols-4 gap-10">
         <template v-for="(palette, idx) in colorPalettes" :key="idx">
