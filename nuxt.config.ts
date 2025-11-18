@@ -6,7 +6,7 @@ export default defineNuxtConfig({
     "@nuxtjs/color-mode",
     "nuxt-icon",
     "@vueuse/nuxt",
-    '@unocss/nuxt'
+    "@unocss/nuxt",
   ],
   colorMode: {
     classSuffix: "",
@@ -14,5 +14,12 @@ export default defineNuxtConfig({
     fallback: "light",
   },
   compatibilityDate: "2024-09-05",
-  ssr: false
+  ssr: false,
+  runtimeConfig: {
+    public: {
+      appwriteProjectId: process.env.APPWRITE_PROYECT_ID,
+      appwriteEndpointUrl: process.env.APPWRITE_ENDPOINT_URL,
+      appwriteDatabaseId: process.env.APPWRITE_DATABASE_ID,
+    },
+  },
 });

@@ -2,9 +2,11 @@
 import { Client, TablesDB, Permission, Role } from "appwrite";
 
 export const useAppwrite = () => {
+  const config = useRuntimeConfig();
+
   const client = new Client()
-    .setEndpoint("https://cloud.appwrite.io/v1")
-    .setProject("TU_PROJECT_ID");
+    .setEndpoint(config.public.appwriteEndpointUrl)
+    .setProject(config.public.appwriteProjectId);
 
   const tablesDB = new TablesDB(client);
 
